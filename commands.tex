@@ -1,0 +1,183 @@
+
+
+%%%%%%%%%%%%%%
+% General Writing
+%%%%%%%%%%%%%%%
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\newcommand{\UK}{United Kingdom}
+\newcommand{\todo}[1]{{\textbf{\color{red} TODO}: \color{red}#1}}
+\newcommand{\question}[1]{{\textbf{\color{dkgreen} QUESTION}: \color{dkgreen}#1}}
+\newcommand{\complete}{\textbf{\textcolor{blue}{(sub)Section complete}}}
+\newcommand{\tabref}[1]{Table \ref{#1}}
+\newcommand{\figref}[1]{Figure \ref{#1}}
+\newcommand{\secref}[1]{Section \ref{#1}}
+\newcommand{\dby}[1]{\text{d}{#1}}
+\newcommand{\nystrom}{Nystr\"{o}m }
+
+% Norms
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+%%%%%%%%%%%%%%
+% Distributions
+%%%%%%%%%%%%%%
+\newcommand{\poi}{\text{Poisson}}
+\newcommand{\pois}[1]{\text{Poi}\left({#1}\right)}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Data Descriptions
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\generaldataset}{\mathcal{D} = (X, Y) = \left\{\mathbf{x}_{i}, y_{i} | i=1, \ldots N\right\}}
+\newcommand{\x}{\mathbf{x}}
+\newcommand{\xx}{\mathbf{x}_*}
+\newcommand{\y}{y}
+\newcommand{\yx}{y_*}
+\newcommand{\noise}{\epsilon}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% Operators
+%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\V}{\mathrm{Var}}
+\newcommand{\mb}{\mathbf}
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\Expect}[1]{\mathbb{E} \left[{#1}\right]}
+\newcommand{\Expects}[2]{\mathbb{E}_{{#1}} \left[{#2}\right]}
+\newcommand{\Var}[1]{\mbox{Var} \left[{#1}\right]}
+\newcommand{\Cov}[1]{\mbox{Cov} \left[{#1}\right]}
+\newcommand{\Vars}[2]{\mbox{Var}_{{#1}} \left[{#2}\right]}
+\newcommand{\Prob}[1]{\mathbb{P} \left({#1}\right)}
+\newcommand{\Probs}[2]{\mathbb{P}_{#1} \left({#2}\right)}
+\newcommand{\Abs}[1]{\left\vert{#1}\right\vert}
+\newcommand{\Norm}[1]{\left\vert\left\vert{#1}\right\vert\right\vert}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% GP Stuff 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% General GP
+\newcommand{\gp}{\mathcal{GP}}
+\newcommand{\GP}{\mathcal{GP}}
+\newcommand{\bff}{\mathbf{f}}
+\newcommand{\bfx}{\mathbf{f}_*}
+
+\newcommand{\meanfunc}[1]{m(#1)}
+
+\newcommand{\kerndot}{k_{\theta}(\cdot, \cdot)}
+\newcommand{\kernx}{k_{\theta}(\x, \x')}
+\newcommand{\kernel}[2]{k_{\theta}(#1#2)}
+
+% Full Kernel Matrices
+\newcommand{\cov}{\textrm{cov}}
+\newcommand{\var}{\textrm{var}}
+
+\newcommand{\Kxx}{K_{\mathbf{*,*}}}
+\newcommand{\Kxf}{K_{\mathbf{*,f}}}
+\newcommand{\Kfx}{K_{\mathbf{f,*}}}
+\newcommand{\Kff}{K_{\mathbf{f,f}}}
+\newcommand{\Kuu}{K_{\mathbf{u, u}}}
+\newcommand{\Kfu}{K_{\mathbf{f, u}}}
+\newcommand{\Kuf}{K_{\mathbf{u, f}}}
+\newcommand{\Kxu}{K_{\mathbf{*, u}}}
+\newcommand{\Kux}{K_{\mathbf{u, *}}}
+
+% Sparse Kernels Matrices
+\newcommand{\Qxx}{Q_{\mathbf{*,*}}}
+\newcommand{\Quf}{Q_{\mathbf{u,f}}}
+\newcommand{\Quu}{Q_{\mathbf{u,u}}}
+\newcommand{\Qfu}{Q_{\mathbf{f,u}}}
+\newcommand{\Qff}{Q_{\mathbf{f,f}}}
+\newcommand{\Qxf}{Q_{\mathbf{*,f}}}
+\newcommand{\Qfx}{Q_{\mathbf{f,*}}}
+
+% Coregionalised GPs
+\newcommand{\B}{\mathbf{B}}
+\newcommand{\coreg}[2]{\mathbf{B}_{{#1}, {#2}}}
+\newcommand{\corega}{\mathbf{a}}
+\newcommand{\coregf}{\mathbf{f}}
+
+% Random Fourier Features
+\newcommand{\sr}{\mathbf{s}_r}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Variational Inference
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\posterior}{p(\theta | x)}
+\newcommand{\joint}{p(\theta, x)}
+\newcommand{\marginal}{p(x)}
+\newcommand{\prior}{p(\theta)}
+\newcommand{\likelihood}{p(x | \theta)}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\Qapprox}{q(\lambda)}
+\newcommand{\Qoptimal}{q^*(\lambda)}
+\newcommand{\KL}{\text{KL}}
+\newcommand{\ELBO}{\text{ELBO}}
+\newcommand{\elbo}{\text{ELBO}}
+\newcommand{\tr}{\text{tr}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% AQ Stuff
+%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\pmtwo}{PM\textsubscript{2.5} }
+\newcommand{\pmten}{PM\textsubscript{10} }
+\newcommand{\sulfurotwo}{SO\textsubscript{2} }
+\newcommand{\notwo}{NO\textsubscript{2} }
+\newcommand{\othree}{O\textsubscript{3}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+% Other - Could delete
+%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\bw}{\mathbf{w}}
+\newcommand{\bx}{\mathbf{x}}
+\newcommand{\bI}{\mathbf{I}}
+\newcommand{\bk}{\mathbf k}
+\newcommand{\bm}{\mathbf m}
+\newcommand{\bM}{\mathbf M}
+\newcommand{\bX}{\mathbf X}
+\newcommand{\by}{\mathbf y}
+\newcommand{\bv}{\mathbf v}
+\newcommand{\bu}{\mathbf u}
+\newcommand{\bU}{\mathbf U}
+\newcommand{\bZ}{\mathbf Z}
+\newcommand{\given}{\,|\,}
+\newcommand{\btheta}{\boldsymbol\theta}
+\newcommand{\bphi}{\boldsymbol\phi}
+\newcommand{\brho}{\boldsymbol\rho}
+\newcommand{\bSigma}{\boldsymbol\Sigma}
+\newcommand{\infint}{\int_{-\infty}^\infty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Julia Language Style
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\lstdefinelanguage{Julia}%
+  {morekeywords={abstract,break,case,catch,const,continue,do,else,elseif,%
+      end,export,false,for,function,immutable,import,importall,if,in,%
+      macro,module,otherwise,quote,return,switch,true,try,type,typealias,%
+      using,while},%
+   sensitive=true,%
+   morecomment=[l]\#,%
+   morecomment=[n]{\#=}{=\#},%
+   morestring=[s]{"}{"},%
+   morestring=[m]{'}{'},%
+}[keywords,comments,strings]%
+
+\lstset{%
+    language         = Julia,
+    basicstyle       = \ttfamily,
+    keywordstyle     = \bfseries\color{blue},
+    stringstyle      = \color{magenta},
+    commentstyle     = \color{ForestGreen},
+    showstringspaces = false,
+}
+
